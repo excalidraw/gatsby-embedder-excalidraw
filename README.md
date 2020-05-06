@@ -94,7 +94,7 @@ module.exports = {
 
 Create an MDX page `src/pages/index.mdx` and add a link to an Excalidraw diagram:
 
-```md
+```markdown
 # Fox grab flowchart
 
 Fox's followups after a grab depend on your opponent's DI:

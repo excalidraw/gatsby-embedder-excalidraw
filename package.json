@@ -1,6 +1,6 @@
 {
   "name": "excalidraw-embed",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Custom transformer to embed Excalidraw diagrams",
   "main": "index.js",
   "keywords": [

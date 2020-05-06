@@ -92,7 +92,7 @@ module.exports = {
 };
 ```
 
-Create an MDX page `src/pages/index.mdx` and add a link to an Excalidraw diagram:
+Create an MDX page at `src/pages/index.mdx` and add a link to an Excalidraw diagram:
 
 ```markdown
 # Fox grab flowchart

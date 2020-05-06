@@ -5,10 +5,12 @@ module.exports = async url => {
   const browser = await puppeteer.launch({
     args: process.env.NODE_ENV === 'production' ? ['--no-sandbox'] : []
   });
+
   const page = await browser.newPage();
   await page.goto(url);
   await page.click('[aria-label=Export]');
   await page.click("[aria-label='Scale 3 x']");
+
   const frame = await page.mainFrame();
   const result = await frame.evaluate(
     () =>
@@ -27,6 +29,7 @@ module.exports = async url => {
         }
       })
   );
+
   await browser.close();
   return result;
 };

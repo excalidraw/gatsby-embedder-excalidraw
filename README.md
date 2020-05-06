@@ -33,6 +33,77 @@ module.exports = {
 };
 ```
 
+## Example
+
+This guide will show you how to get up and running with `excalidraw-embed` in the fewest steps possible. It uses `gatsby-plugin-mdx` to take advantage of its awesome default behaviour of automatically creating pages based on MDX files in `src/pages`.
+
+First, install `gatsby` and its dependencies:
+
+```bash
+npm install gatsby react react-dom
+```
+
+Next, install `gatsby-plugin-mdx` and its dependencies:
+
+```bash
+npm install gatsby-plugin-mdx @mdx-js/mdx @mdx-js/react
+```
+
+Add `gatsby-plugin-mdx` to your Gatsby config:
+
+```js
+// gatsby-config.js
+module.exports = {
+  plugins: [
+    {
+      resolve: 'gatsby-plugin-mdx'
+    }
+  ]
+};
+```
+
+Install the `gatsby-remark-embedder` plugin, and the Excalidraw transformer `excalidraw-embed`:
+
+```bash
+npm install gatsby-remark-embedder excalidraw-embed
+```
+
+Add `gatsby-remark-embedder` as a Gatsby remark plugin for `gatsby-plugin-mdx`. In your `gatsby-remark-embedder` options, add `excalidraw-embed` as a custom transformer:
+
+```diff
+// gatsby-config.js
+module.exports = {
+  plugins: [
+    {
+-     resolve: 'gatsby-plugin-mdx'
++     resolve: 'gatsby-plugin-mdx',
++     options: {
++       gatsbyRemarkPlugins: [
++         {
++           resolve: 'gatsby-remark-embedder',
++           options: {
++             customTransformers: [require('excalidraw-embed')]
++           }
++         }
++       ]
++     }
+    }
+  ]
+};
+```
+
+Create an MDX page `src/pages/index.mdx` and add a link to an Excalidraw diagram:
+
+```md
+# Fox grab flowchart
+
+Fox's followups after a grab depend on your opponent's DI:
+
+https://excalidraw.com/#json=5695519967936512,sLhjTgn1_wB1iVLLquX6Fg
+```
+
+Voila! 🎉 https://excalidraw-embed.netlify.app
+
 ## License
 
 [MIT](./LICENSE)

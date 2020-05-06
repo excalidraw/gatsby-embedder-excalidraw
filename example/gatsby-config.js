@@ -7,9 +7,7 @@ module.exports = {
           {
             resolve: 'gatsby-remark-embedder',
             options: {
-              customTransformers: [
-                require('../') // require('excalidraw-embed')
-              ]
+              customTransformers: [require('excalidraw-embed')]
             }
           }
         ]

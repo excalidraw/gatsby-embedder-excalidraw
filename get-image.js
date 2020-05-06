@@ -1,9 +1,9 @@
 const puppeteer = require('puppeteer');
 
 module.exports = async url => {
-  // disable sandbox on build env
+  // disable sandbox in production
   const browser = await puppeteer.launch({
-    args: process.env.NOW_BUILDER ? ['--no-sandbox'] : []
+    args: process.env.NODE_ENV === 'production' ? ['--no-sandbox'] : []
   });
   const page = await browser.newPage();
   await page.goto(url);

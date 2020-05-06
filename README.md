@@ -4,6 +4,11 @@ This custom transformer for `gatsby-remark-embedder` allows you to embed Excalid
 
 The code for this library is lifted from [this file](https://github.com/excalidraw/excalidraw-blog/blob/master/src/excalidraw-embed/index.js) in the [`excalidraw-blog`](https://github.com/excalidraw/excalidraw-blog) Gatsby site. All credit for this transformer goes to those authors. I was inspired to do this when I saw [Alex Luong's tweet](https://twitter.com/alex__luong/status/1257909443112497153) about making this functionality into a `gatsby-remark-excalidraw` plugin.
 
+- [Installation](#installation)
+- [Usage](#usage)
+- [Example](#example)
+- [License](#license)
+
 ## Installation
 
 ```bash
@@ -62,7 +67,7 @@ module.exports = {
 };
 ```
 
-Install the `gatsby-remark-embedder` plugin, and the Excalidraw transformer `excalidraw-embed`:
+Install the `gatsby-remark-embedder` plugin and this Excalidraw transformer `excalidraw-embed`:
 
 ```bash
 npm install gatsby-remark-embedder excalidraw-embed

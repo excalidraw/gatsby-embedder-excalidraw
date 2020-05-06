@@ -102,7 +102,7 @@ Fox's followups after a grab depend on your opponent's DI:
 https://excalidraw.com/#json=5695519967936512,sLhjTgn1_wB1iVLLquX6Fg
 ```
 
-Voila! 🎉 https://excalidraw-embed.netlify.app
+Voila! 🎉 https://excalidraw-embed.trevorblades.com
 
 ## License
 

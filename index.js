@@ -1,8 +1,8 @@
 const getImage = require('./get-image');
 
-const regex = /^https?:\/\/excalidraw\.com\/#json=/;
+exports.shouldTransform = url =>
+  /^https?:\/\/excalidraw\.com\/#json=/.test(url);
 
-exports.shouldTransform = url => regex.test(url);
 exports.getHTML = async url => {
   const svg = await getImage(url);
   return `<a style="box-shadow: none" href="${url}">${svg.replace(

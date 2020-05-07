@@ -1,4 +1,4 @@
-# Embedded Excalidraw diagrams
+# Embedding Excalidraw diagrams in Markdown
 
 This custom transformer for [`gatsby-remark-embedder`](https://github.com/MichaelDeBoey/gatsby-remark-embedder) allows you to embed Excalidraw diagrams in Markdown content simply by pasting an Excalidraw link in the source.
 

@@ -1,12 +1,14 @@
 {
-  "name": "excalidraw-embed",
+  "name": "gatsby-embedder-excalidraw",
   "version": "0.0.9",
   "description": "Custom transformer to embed Excalidraw diagrams",
   "main": "index.js",
   "keywords": [
     "embedder",
     "excalidraw",
-    "remark"
+    "remark",
+    "gatsby",
+    "gatsby-plugin"
   ],
   "author": "Trevor Blades <tdblades@gmail.com>",
   "license": "MIT",

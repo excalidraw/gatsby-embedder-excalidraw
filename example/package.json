@@ -2,9 +2,6 @@
   "scripts": {
     "start": "gatsby develop"
   },
-  "eslintConfig": {
-    "extends": "@trevorblades/eslint-config/react"
-  },
   "dependencies": {
     "@mdx-js/mdx": "^1.6.1",
     "@mdx-js/react": "^1.6.1",

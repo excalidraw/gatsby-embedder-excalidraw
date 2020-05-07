@@ -1,8 +1,8 @@
-# Embedding Excalidraw diagrams in Markdown
+# gatsby-embedder-excalidraw
 
 This custom transformer for [`gatsby-remark-embedder`](https://github.com/MichaelDeBoey/gatsby-remark-embedder) allows you to embed Excalidraw diagrams in Markdown content simply by pasting an Excalidraw link in the source.
 
-The code for this library is lifted from [this file](https://github.com/excalidraw/excalidraw-blog/blob/master/src/excalidraw-embed/index.js) in the [`excalidraw-blog`](https://github.com/excalidraw/excalidraw-blog) Gatsby site. All credit for this transformer goes to those authors. I was inspired to do this when I saw [Alex Luong's tweet](https://twitter.com/alex__luong/status/1257909443112497153) about making this functionality into a `gatsby-remark-excalidraw` plugin.
+The code for this library is lifted from [this file](https://github.com/excalidraw/excalidraw-blog/blob/master/src/gatsby-embedder-excalidraw/index.js) in the [`excalidraw-blog`](https://github.com/excalidraw/excalidraw-blog) Gatsby site. All credit for this transformer goes to those authors. I was inspired to do this when I saw [Alex Luong's tweet](https://twitter.com/alex__luong/status/1257909443112497153) about making this functionality into a `gatsby-remark-excalidraw` plugin.
 
 - [Installation](#installation)
 - [Usage](#usage)
@@ -12,7 +12,7 @@ The code for this library is lifted from [this file](https://github.com/excalidr
 ## Installation
 
 ```bash
-npm install excalidraw-embed
+npm install gatsby-embedder-excalidraw
 ```
 
 ## Usage
@@ -28,7 +28,7 @@ module.exports = {
           {
             resolve: 'gatsby-remark-embedder',
             options: {
-              customTransformers: [require('excalidraw-embed')]
+              customTransformers: [require('gatsby-embedder-excalidraw')]
             }
           }
         ]
@@ -40,7 +40,7 @@ module.exports = {
 
 ## Example
 
-This guide will show you how to get up and running with `excalidraw-embed` in the fewest steps possible. It uses `gatsby-plugin-mdx` to take advantage of its awesome default behaviour of automatically creating pages based on MDX files in `src/pages`.
+This guide will show you how to get up and running with `gatsby-embedder-excalidraw` in the fewest steps possible. It uses `gatsby-plugin-mdx` to take advantage of its awesome default behaviour of automatically creating pages based on MDX files in `src/pages`.
 
 First, install `gatsby` and its dependencies:
 
@@ -67,13 +67,13 @@ module.exports = {
 };
 ```
 
-Install the `gatsby-remark-embedder` plugin and this Excalidraw transformer `excalidraw-embed`:
+Install the `gatsby-remark-embedder` plugin and this Excalidraw transformer `gatsby-embedder-excalidraw`:
 
 ```bash
-npm install gatsby-remark-embedder excalidraw-embed
+npm install gatsby-remark-embedder gatsby-embedder-excalidraw
 ```
 
-Add `gatsby-remark-embedder` as a Gatsby remark plugin for `gatsby-plugin-mdx`. In your `gatsby-remark-embedder` options, add `excalidraw-embed` as a custom transformer:
+Add `gatsby-remark-embedder` as a Gatsby remark plugin for `gatsby-plugin-mdx`. In your `gatsby-remark-embedder` options, add `gatsby-embedder-excalidraw` as a custom transformer:
 
 ```diff
 // gatsby-config.js
@@ -87,7 +87,7 @@ module.exports = {
 +         {
 +           resolve: 'gatsby-remark-embedder',
 +           options: {
-+             customTransformers: [require('excalidraw-embed')]
++             customTransformers: [require('gatsby-embedder-excalidraw')]
 +           }
 +         }
 +       ]

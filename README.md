@@ -7,6 +7,10 @@ The code for this library is lifted from [this file](https://github.com/excalidr
 - [Installation](#installation)
 - [Usage](#usage)
 - [Example](#example)
+  - [Install dependencies](#install-dependencies)
+  - [Configure plugins](#configure-plugins)
+  - [Create a drawing](#create-a-drawing)
+  - [Embed your drawing](#embed-your-drawing)
 - [License](#license)
 
 ## Installation

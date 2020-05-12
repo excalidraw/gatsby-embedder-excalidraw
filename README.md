@@ -42,6 +42,8 @@ module.exports = {
 
 This guide will show you how to get up and running with `gatsby-embedder-excalidraw` in the fewest steps possible. It uses `gatsby-plugin-mdx` to take advantage of its awesome default behaviour of automatically creating pages based on MDX files in `src/pages`.
 
+### Install dependencies
+
 First, install `gatsby` and its dependencies:
 
 ```bash
@@ -53,6 +55,8 @@ Next, install `gatsby-plugin-mdx` and its dependencies:
 ```bash
 npm install gatsby-plugin-mdx @mdx-js/mdx @mdx-js/react
 ```
+
+### Configure plugins
 
 Add `gatsby-plugin-mdx` to your Gatsby config:
 
@@ -96,6 +100,14 @@ module.exports = {
   ]
 };
 ```
+
+### Create a drawing
+
+Head over to [Excalidraw](https://excalidraw.com) and draw something! Once you're satisfied, you can find a shareable link to your drawing in the export dialog, accesible from the icon in the top left corner of the page.
+
+![link](link.gif)
+
+### Embed your drawing
 
 Create an MDX page at `src/pages/index.mdx` and add a link to an Excalidraw diagram:
 

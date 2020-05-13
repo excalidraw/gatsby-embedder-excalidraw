@@ -12,6 +12,7 @@
   ],
   "author": "Trevor Blades <tdblades@gmail.com>",
   "license": "MIT",
+  "repository": "excalidraw/gatsby-embedder-excalidraw",
   "eslintConfig": {
     "extends": "@trevorblades",
     "env": {

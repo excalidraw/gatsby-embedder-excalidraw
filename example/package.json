@@ -6,9 +6,9 @@
     "@mdx-js/mdx": "^1.6.1",
     "@mdx-js/react": "^1.6.1",
     "gatsby": "^2.21.16",
-    "gatsby-embedder-excalidraw": "0.0.10",
     "gatsby-plugin-mdx": "^1.2.6",
     "gatsby-remark-embedder": "^2.0.1",
+    "puppeteer": "^3.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   }

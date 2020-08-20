@@ -1,6 +1,6 @@
 {
   "name": "gatsby-embedder-excalidraw",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Custom transformer to embed Excalidraw diagrams",
   "main": "index.js",
   "keywords": [

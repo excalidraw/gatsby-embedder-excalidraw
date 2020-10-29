@@ -27,6 +27,6 @@
     "gatsby-remark-embedder": "^2.0.1"
   },
   "dependencies": {
-    "puppeteer": "^2.1.1"
+    "puppeteer": "^5.4.1"
   }
 }

@@ -20,13 +20,13 @@
     }
   },
   "devDependencies": {
-    "@trevorblades/eslint-config": "^7.0.2",
+    "@trevorblades/eslint-config": "^7.2.1",
     "eslint": "^7.12.1"
   },
   "peerDependencies": {
-    "gatsby-remark-embedder": "^2.0.1"
+    "gatsby-remark-embedder": "^4.0.0"
   },
   "dependencies": {
-    "puppeteer": "^2.1.1"
+    "puppeteer": "^5.4.1"
   }
 }

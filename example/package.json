@@ -3,13 +3,13 @@
     "start": "gatsby develop"
   },
   "dependencies": {
-    "@mdx-js/mdx": "^1.6.1",
-    "@mdx-js/react": "^1.6.1",
-    "gatsby": "^2.21.16",
-    "gatsby-plugin-mdx": "^1.2.6",
-    "gatsby-remark-embedder": "^2.0.1",
-    "puppeteer": "^2.1.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "@mdx-js/mdx": "^1.6.19",
+    "@mdx-js/react": "^1.6.19",
+    "gatsby": "^2.24.91",
+    "gatsby-plugin-mdx": "^1.2.52",
+    "gatsby-remark-embedder": "^4.0.0",
+    "puppeteer": "^5.4.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   }
 }

@@ -1,3 +1,5 @@
 node_modules
 .cache
 public
+yarn-error.log
+yarn.lock

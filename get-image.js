@@ -3,6 +3,7 @@ const puppeteer = require('puppeteer');
 module.exports = async url => {
   // disable sandbox in production
   const browser = await puppeteer.launch({
+    slowMo: 100,
     args: process.env.NODE_ENV === 'production' ? ['--no-sandbox'] : []
   });
 
@@ -10,8 +11,7 @@ module.exports = async url => {
   await page.goto(url);
   await page.click('[aria-label=Export]');
 
-  const frame = await page.mainFrame();
-  const result = await frame.evaluate(
+  const result = await page.mainFrame().evaluate(
     () =>
       new Promise((resolve, reject) => {
         try {

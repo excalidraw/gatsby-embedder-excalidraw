@@ -7,7 +7,7 @@ module.exports = {
           {
             resolve: 'gatsby-remark-embedder',
             options: {
-              customTransformers: [require('../')]
+              customTransformers: [require('.')]
             }
           }
         ]

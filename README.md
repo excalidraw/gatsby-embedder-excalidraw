@@ -2,7 +2,7 @@
 
 This custom transformer for [`gatsby-remark-embedder`](https://github.com/MichaelDeBoey/gatsby-remark-embedder) allows you to embed Excalidraw diagrams in Markdown content simply by pasting an Excalidraw link in the source.
 
-The code for this library is lifted from [this file](https://github.com/excalidraw/excalidraw-blog/blob/master/src/gatsby-embedder-excalidraw/index.js) in the [`excalidraw-blog`](https://github.com/excalidraw/excalidraw-blog) Gatsby site. All credit for this transformer goes to those authors. I was inspired to do this when I saw [Alex Luong's tweet](https://twitter.com/alex__luong/status/1257909443112497153) about making this functionality into a `gatsby-remark-excalidraw` plugin.
+The code for this library is lifted from [this directory](https://github.com/excalidraw/excalidraw-blog/tree/d3fcdce73277f7b5f123329350309b9ca02f06e5/src/excalidraw-embed) in the [`excalidraw-blog`](https://github.com/excalidraw/excalidraw-blog) Gatsby site. All credit for this transformer goes to those authors. I was inspired to do this when I saw [Alex Luong's tweet](https://twitter.com/alex__luong/status/1257909443112497153) about making this functionality into a `gatsby-remark-excalidraw` plugin.
 
 - [Installation](#installation)
 - [Usage](#usage)

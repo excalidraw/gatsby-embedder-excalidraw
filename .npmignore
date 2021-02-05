@@ -1,3 +1,6 @@
+.cache
+.github
+public
 src
 gatsby-*.js
 *.gif

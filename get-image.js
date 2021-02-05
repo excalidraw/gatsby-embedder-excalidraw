@@ -4,10 +4,16 @@ module.exports = async url => {
   // disable sandbox in production
   const browser = await puppeteer.launch({
     slowMo: 100,
+    // headless: false,
     args: process.env.NODE_ENV === 'production' ? ['--no-sandbox'] : []
   });
 
-  const page = await browser.newPage();
+  const context = await browser.createIncognitoBrowserContext();
+  const page = await context.newPage();
+
+  // accept the "replace drawing" dialog if it shows up
+  page.on('dialog', dialog => dialog.accept());
+
   await page.goto(url);
   await page.click('[aria-label=Export]');
 

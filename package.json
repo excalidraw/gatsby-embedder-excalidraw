@@ -28,7 +28,7 @@
     "@trevorblades/eslint-config": "^7.0.2",
     "eslint": "^7.12.1",
     "gatsby": "^2.24.91",
-    "gatsby-plugin-mdx": "^1.2.52",
+    "gatsby-plugin-mdx": "^2.3.0",
     "gatsby-remark-embedder": "^4.1.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"

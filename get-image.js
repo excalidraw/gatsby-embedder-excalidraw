@@ -15,7 +15,7 @@ module.exports = async url => {
   page.on('dialog', dialog => dialog.accept());
 
   await page.goto(url);
-  await page.click('[aria-label=Export]');
+  await page.click('[data-testid=image-export-button]');
 
   const result = await page.mainFrame().evaluate(
     () =>

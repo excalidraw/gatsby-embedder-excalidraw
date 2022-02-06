@@ -37,6 +37,6 @@
     "gatsby-remark-embedder": ">=2"
   },
   "dependencies": {
-    "puppeteer": "^4.0.1"
+    "puppeteer": "^13.1.3"
   }
 }
